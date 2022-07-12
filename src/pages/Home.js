@@ -14,7 +14,7 @@ const mapLocation = "https://goo.gl/maps/BBS62SCqb7UyYk4V8";
 const Home = () => {
   return (
     <div>
-      <Container fluid>
+      <Container fluid className="mb-5">
         <Row className="mt-5">
           <Col lg className={styles.center}>
             <div className="leftContent">
