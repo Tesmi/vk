@@ -139,7 +139,7 @@ const data = [
 
   {
     src: require("../assets/tantalum capicitor.jpeg"),
-    name: "Tantalum Capacitors",
+    name: "Tantalum Capacitor",
     desc: "AVX, GUJARAT POLY, AEC, VISHAY",
   },
 
