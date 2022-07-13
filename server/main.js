@@ -1,6 +1,7 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
+const path = require("path");
 
 const mail = "vkentpbuiss@gmail.com";
 const pass = "vwblyrijvbjxwacv";
@@ -11,7 +12,13 @@ app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/mail", (req, res) => {
+app.use(express.static(path.join(__dirname, "../", "build")));
+
+app.get("*", async (req, res) => {
+  res.sendFile(path.join(__dirname, "../", "build", "index.html"));
+});
+
+app.get("/mail", async (req, res) => {
   const userMail = req.query.mail;
   const userPhone = req.query.phone;
   const userQuery = req.query.query;
