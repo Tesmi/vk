@@ -6,8 +6,8 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 
 import Footer from "../components/Footer";
 
-const URI = "http://localhost:5000/mail";
-// const URI = "vkentp.com/mail";
+// const URI = "http://localhost:5000/mail";
+const URI = "https://vkentp.com/mail";
 
 const header_img = require("../assets/other/circuit_header.jpg");
 const about_img = require("../assets/other/circuit_about.jpg");
@@ -20,6 +20,7 @@ const Home = () => {
   const [mail, setMail] = useState("");
   const [phone, setPhone] = useState("");
   const [query, setQuery] = useState("");
+  const [user, setUser] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (event) => {
@@ -29,13 +30,17 @@ const Home = () => {
   };
 
   const sendMail = async () => {
-    await axios.get(URI, { params: { mail, phone, query } }).then((result) => {
-      alert("Message Sent");
-      setMail("");
-      setPhone("");
-      setQuery("");
-      setLoading(false);
-    });
+    console.log("mail called");
+    await axios
+      .get(URI, { params: { mail, phone, query, user } })
+      .then((result) => {
+        console.log(result);
+        alert("Message Sent");
+        setMail("");
+        setPhone("");
+        setQuery("");
+        setLoading(false);
+      });
   };
 
   return (
@@ -159,7 +164,7 @@ const Home = () => {
               </div>
 
               <h2 style={{ color: "rgb(74, 74, 95)" }}>
-                For any further queries please feel free to contact us.
+                For any further queries or purchase order please feel free to contact us.
               </h2>
 
               <form onSubmit={handleSubmit}>
@@ -174,6 +179,16 @@ const Home = () => {
                     className="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Enter your email address"
+                  />
+                </div>
+                <div className="form-group mt-3">
+                  <label htmlFor="exampleFormControlInput1">Your Name</label>
+                  <input
+                    onChange={(e) => setUser(e.target.value)}
+                    value={user}
+                    className="form-control"
+                    id="exampleFormControlInput2"
+                    placeholder="Enter your name"
                   />
                 </div>
                 <div className="form-group mt-3">
