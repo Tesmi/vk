@@ -89,7 +89,7 @@ const data = [
   {
     src: require("../assets/mosfet.jpeg"),
     name: "Mosfets",
-    desc: "WXDH, HK SEMI, ST, INFENION, FAIRCHILD, TOSHIBA, WINSEMI",
+    desc: "WXDH, HK SEMI, ST, INFINEON, FAIRCHILD, TOSHIBA, WINSEMI",
   },
   {
     src: require("../assets/MOV PTC NTC.jpeg"),
@@ -98,7 +98,7 @@ const data = [
   },
   {
     src: require("../assets/network resistor.jpeg"),
-    name: "Network resistor",
+    name: "Network resistors",
     desc: "FENGHUA, IMPORTED",
   },
   {
@@ -108,13 +108,18 @@ const data = [
   },
   {
     src: require("../assets/resistor.jpeg"),
-    name: "Resistor",
+    name: "Resistors",
     desc: "SUPERCOM, WATTS, THAKOR",
   },
   {
     src: require("../assets/scr module.jpeg"),
     name: "SCR module",
     desc: "IXYS, FUJI, SEMIKRON, INFINEON, MITSUBISHI",
+  },
+  {
+    src: require("../assets/igbt.jpeg"),
+    name: "IGBT",
+    desc: "SEMIKRON, INFINEON, ST, etc.",
   },
   {
     src: require("../assets/smd ics.jpeg"),

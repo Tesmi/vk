@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./home.module.scss";
 import axios from "axios";
 
@@ -63,13 +64,13 @@ const Home = () => {
                 customers with the most difficult-to-find technical components
                 as quickly as possible.
               </h5>
-              <a style={{ textDecoration: "none" }} href="/products">
+              <Link style={{ textDecoration: "none" }} to="/products">
                 <div className={styles.btnContainer}>
                   <div className={styles.button}>
                     <span>Show Products</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </Col>
           <Col lg>
@@ -164,7 +165,8 @@ const Home = () => {
               </div>
 
               <h2 style={{ color: "rgb(74, 74, 95)" }}>
-                For any further queries or purchase order please feel free to contact us.
+                For any further queries or purchase order please feel free to
+                contact us.
               </h2>
 
               <form onSubmit={handleSubmit}>
