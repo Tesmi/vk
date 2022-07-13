@@ -19,7 +19,7 @@ const data = [
   { src: require("../assets/buzzer.jpeg"), name: "buzzer", desc: "HXD" },
   {
     src: require("../assets/capicitor.jpeg"),
-    name: "Bapicitors 1000-8000 hours",
+    name: "Capicitors 1000-8000 hours",
     desc: "JWCO, KELTRON, SAMWHA",
   },
   {
@@ -226,10 +226,13 @@ const Products = () => {
               >
                 {component.desc}
               </p>
+
               <div style={{ justifyContent: "center", display: "flex" }}>
-                <Button size="md" variant="primary">
-                  Contact us for details
-                </Button>
+                <a href="/#contact" style={{ textDecoration: "none" }}>
+                  <Button size="md" variant="primary">
+                    Contact us for details
+                  </Button>
+                </a>
               </div>
             </div>
           ))}
