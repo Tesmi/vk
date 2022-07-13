@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+import { Image } from "react-bootstrap";
+
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -46,6 +48,12 @@ const Header = () => {
     <header className={classes.header}>
       <div className={classes.header__content}>
         <Link to="/" className={classes.header__content__logo}>
+          <Image
+            fluid="True"
+            width={"65px"}
+            style={{ marginRight: "10px" }}
+            src={require("../assets/other/logo.png")}
+          />
           VK-ENTP
         </Link>
         <nav

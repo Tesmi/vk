@@ -5,7 +5,7 @@ const path = require("path");
 
 const mail = "vkentpbuiss@gmail.com";
 const pass = "vwblyrijvbjxwacv";
-const to_mail = "tripathiankit7991@gmail.com";
+const to_mail = "krishnvedentp@gmail.com";
 
 const app = express();
 app.use(express.json());
