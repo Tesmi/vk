@@ -42,7 +42,7 @@ const data = [
 
   {
     src: require("../assets/diode cerimic capicitor.jpeg"),
-    name: "DISC ceramic capicitor",
+    name: "DISC ceramic capacitor",
     desc: "CEDICOM, ZONKAS, HEL, JNC, TC, AEC",
   },
 
@@ -58,7 +58,7 @@ const data = [
   },
   {
     src: require("../assets/electronic capicitor pg grade.jpeg"),
-    name: "Electronic capicitor pg grade",
+    name: "Electronic capacitor pg grade",
     desc: "JWCO, KELTRON, SAMWHA",
   },
   {
@@ -83,13 +83,13 @@ const data = [
   },
   {
     src: require("../assets/metallic polyster capictor.jpeg"),
-    name: "Metalic polyster capictor",
+    name: "Metalic polyster capacitor",
     desc: "GHDY, WEIDY, SAMWHA, DEIKY, DESAI",
   },
   {
     src: require("../assets/mosfet.jpeg"),
     name: "Mosfets",
-    desc: "WXDH, HK SEMI, ST, FAIRCHILD, TOSHIBA, WINSEMI",
+    desc: "WXDH, HK SEMI, ST, INFENION, FAIRCHILD, TOSHIBA, WINSEMI",
   },
   {
     src: require("../assets/MOV PTC NTC.jpeg"),
