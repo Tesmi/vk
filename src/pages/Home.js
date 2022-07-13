@@ -121,7 +121,7 @@ const Home = () => {
                 products as much as we enjoy making them available to you.
               </p>
               <ul className="list" style={{ color: "#808080" }}>
-                <li>Optimized for out specific customer base</li>
+                <li>Optimized for our specific customer base</li>
                 <li>
                   Proven value on our sites to give consumers a reason to buy
                   there instead of third-party channels
