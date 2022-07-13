@@ -53,16 +53,16 @@ export default function Footer() {
             <h2>Quick Links</h2>
             <ul>
               <li>
-                <a href="#">About Us</a>
+                <a href="/#about-us">About Us</a>
               </li>
               <li>
-                <a href="#">Products</a>
+                <a href="/products">Products</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="/#contact">Contact Us</a>
               </li>
               <li>
-                <a href="#location">Location</a>
+                <a href="/#location">Location</a>
               </li>
             </ul>
           </div>

@@ -39,7 +39,7 @@ const Header = () => {
 
   const ctaClickHandler = () => {
     menuToggleHandler();
-    history.push("/contact");
+    history.push("/#contact");
   };
 
   return (
@@ -65,9 +65,9 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/about" onClick={menuToggleHandler}>
+              <a href="/#about-us" onClick={menuToggleHandler}>
                 About
-              </Link>
+              </a>
             </li>
           </ul>
           <button onClick={ctaClickHandler}>Contact Us</button>

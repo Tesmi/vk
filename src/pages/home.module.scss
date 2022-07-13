@@ -83,3 +83,48 @@
   color: teal;
   padding: 10px 0 0 10px;
 }
+
+.aboutImg2,
+.aboutImg2 {
+  display: none;
+}
+
+.border {
+  width: 90%;
+  margin-left: 5%;
+  border-top: 2px solid rgb(189, 179, 179);
+  margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 992px) {
+  .aboutImg2 {
+    display: block !important;
+  }
+  .aboutImg1 {
+    display: none;
+  }
+  .aboutUsTxtContainer {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .aboutImg1 {
+    display: block !important;
+  }
+  .aboutimg2 {
+    display: none;
+  }
+  .aboutUsTxtContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.sectionImgRight {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  padding: 6%;
+  //   border-top: 1px solid white;
+  //   border-bottom: 1px solid white;
+}
+
+.productContainer {
+  height: 400px;
+  width: 250px;
+  margin: 13px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid #292828;
+  box-shadow: rgba(199, 199, 209, 0.25) 0px 50px 100px -20px,
+    rgba(88, 84, 84, 0.3) 0px 30px 60px -30px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 992px) {
+  .searchContainer {
+    margin-top: 60px;
+  }
+}
