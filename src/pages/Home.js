@@ -5,8 +5,6 @@ import axios from "axios";
 
 import { Container, Row, Col, Image } from "react-bootstrap";
 
-import Footer from "../components/Footer";
-
 // const URI = "http://localhost:5000/mail";
 const URI = "https://vkentp.com/mail";
 
@@ -17,7 +15,7 @@ const contact_img = require("../assets/other/contact-us.png");
 
 const mapLocation = "https://goo.gl/maps/BBS62SCqb7UyYk4V8";
 
-const Home = () => {
+const Home = (props) => {
   const [mail, setMail] = useState("");
   const [phone, setPhone] = useState("");
   const [query, setQuery] = useState("");
@@ -266,8 +264,6 @@ const Home = () => {
           <Image fluid="True" width="100%" height="100%" src={map_img} />
         </div>
       </a>
-
-      <Footer />
     </div>
   );
 };

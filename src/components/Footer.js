@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import styles from "./Footer.module.scss";
 
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+export default function Footer(props) {
+  const myRef = useRef(null);
+
+  useEffect(() => {
+    props.setContactUsRef(myRef);
+  }, []);
+
   return (
     <div>
-      <footer className={styles.footer}>
+      <footer ref={myRef} className={styles.footer}>
         <div className={styles.container}>
           <div className={`${styles.sec} ${styles.aboutus}`}>
             <h2>About Us</h2>

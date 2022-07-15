@@ -3,26 +3,23 @@ import Layout from "./components/Layout";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
+import { useState } from "react";
 
 function App() {
+  const [contactUsRef, setContactUsRef] = useState(null);
+
   return (
-    <Layout>
+    <Layout contactUsRef={contactUsRef}>
       <Switch>
         <Route path="/" exact>
-          <Home />
+          <Home setContactUsRef={(e) => setContactUsRef(e)} />
         </Route>
         <Route path="/products">
-          <Products />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/contact">
-          <Contact />
+          <Products contactUsRef={contactUsRef} />
         </Route>
       </Switch>
+      <Footer setContactUsRef={(e) => setContactUsRef(e)} />
     </Layout>
   );
 }

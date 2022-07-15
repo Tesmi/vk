@@ -3,11 +3,11 @@ import Header from "./Header";
 
 import classes from "./Layout.module.scss";
 
-const Layout = ({ children }) => {
+const Layout = (props) => {
   return (
     <>
-      <Header />
-      <div className={classes.container}>{children}</div>
+      <Header contactUsRef={props.contactUsRef} />
+      <div className={classes.container}>{props.children}</div>
     </>
   );
 };

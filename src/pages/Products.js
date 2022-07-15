@@ -3,8 +3,6 @@ import styles from "./products.module.scss";
 
 import { Button, Container, Image, Form, InputGroup } from "react-bootstrap";
 
-import Footer from "../components/Footer";
-
 const data = [
   {
     src: require("../assets/box capicitor.jpeg"),
@@ -162,13 +160,11 @@ const data = [
   },
 ];
 
-const Products = () => {
+const Products = (props) => {
   const [filteredData, setFilteredData] = useState(data);
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    console.log(search);
-
     let txt = search.toLowerCase();
     let filteredData = data.filter(function (item) {
       return (
@@ -233,18 +229,18 @@ const Products = () => {
               </p>
 
               <div style={{ justifyContent: "center", display: "flex" }}>
-                <a href="/#contact" style={{ textDecoration: "none" }}>
-                  <Button size="md" variant="primary">
-                    Contact us for details
-                  </Button>
-                </a>
+                <Button
+                  onClick={() => props.contactUsRef.current.scrollIntoView()}
+                  size="md"
+                  variant="primary"
+                >
+                  Contact us for details
+                </Button>
               </div>
             </div>
           ))}
         </div>
       </Container>
-
-      <Footer />
     </div>
   );
 };

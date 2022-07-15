@@ -8,8 +8,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import classes from "./Header.module.scss";
 import { Link, useHistory } from "react-router-dom";
 
-const Header = () => {
-  const history = useHistory();
+const Header = (props) => {
+  // const history = useHistory();
   const [menuOpen, setMenuOpen] = useState(false);
   const [size, setSize] = useState({
     width: undefined,
@@ -41,7 +41,12 @@ const Header = () => {
 
   const ctaClickHandler = () => {
     menuToggleHandler();
-    history.push("/#contact");
+    props.contactUsRef.current.scrollIntoView();
+
+    // setTimeout(() => {
+    //   window.location.href = "/#contact";
+    // }, 400);
+    // history.push("/#contact");
   };
 
   return (
